@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 ruby '2.3.4'
+gem 'sqlite3'
+# Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.0.0'
 # Use sqlite3 as the database for Active Record
@@ -45,8 +47,6 @@ end
 
 group :development do
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
-  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
   gem 'listen', '3.0.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
@@ -56,7 +56,7 @@ end
 
 group :production do
    # Use the PostgreSQL gem for Heroku production servers
-  gem 'pg', '~> 0.20'
+  gem 'pg', '~> 0.20.0'
   gem 'rails_12factor'
 end
 
