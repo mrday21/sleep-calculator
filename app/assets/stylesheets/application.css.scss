@@ -30,8 +30,18 @@ h1, h2, h3, {
   font-family: 'Open Sans', sans-serif;
 }
 
-body {
+body.home-bg {
 background: url("calculation.jpg");
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+line-height: 1.5;
+color: white;
+background-size: 100% 100%;
+}
+
+body.about-bg {
+background: url("Salts.jpg");
 background-size: cover;
 background-position: center;
 background-attachment: fixed;
