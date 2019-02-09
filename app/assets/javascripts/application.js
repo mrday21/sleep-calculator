@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+//= require bootstrap-sprockets
 //= require bootstrap/affix
 //= require bootstrap/alert
 //= require bootstrap/button
@@ -31,3 +32,4 @@
 //= require_tree .
 
 
+import 'bootstrap';
