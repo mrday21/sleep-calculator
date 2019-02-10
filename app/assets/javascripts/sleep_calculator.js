@@ -61,3 +61,4 @@ const calculateSleepDebt = () => {
 };
 
 calculateSleepDebt();
+document.body.innerHTML = "";
