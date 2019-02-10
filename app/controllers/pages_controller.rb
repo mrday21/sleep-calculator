@@ -12,4 +12,13 @@ class PagesController < ApplicationController
   def about
   end
   
+  def sleep
+  end
+  
+  def temp
+  end
+  
+  def dog
+  end
+  
 end

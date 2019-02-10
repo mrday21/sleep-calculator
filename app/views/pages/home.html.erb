@@ -1,13 +1,14 @@
 <body class="home-bg">
-<div class="container">
-<h1>Calculators</h1>
-<br />
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-<br />
-</div>
-<div class="container calc-buttons">
-  <button type="button" class="btn btn-primary btn-lg btn-block">Sleep Calculator</button>
-  <button type="button" class="btn btn-secondary btn-lg btn-block">Temperature Calculator</button>
- <button type="button" class="btn btn-info btn-lg btn-block">Dog Year Calculator</button>
-</div>
+  <div class="container">
+    <h1>Calculators</h1>
+      <p>Handy calculators for not so everyday needs!</p>
+  <br />
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  <br />
+  </div>
+    <div class="container calc-buttons">
+       <%= link_to 'Sleep Calculator', sleep_path, :class => "btn btn-primary btn-lg btn-block" %>
+       <%= link_to 'Temperature Calculator', temp_path, :class => "btn btn-default btn-lg btn-block" %>
+       <%= link_to 'Dog Calculator', dog_path, :class => "btn btn-info btn-lg btn-block" %>
+    </div>
 </body>

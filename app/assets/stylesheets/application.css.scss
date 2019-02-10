@@ -10,7 +10,7 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
   */
-  
+
 //Boostrap
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
@@ -30,6 +30,7 @@ h1, h2, h3, {
   font-family: 'Open Sans', sans-serif;
 }
 
+//Background Images
 body.home-bg {
 background: url("calculation.jpg");
 background-size: cover;
@@ -41,15 +42,18 @@ background-size: 100% 100%;
 }
 
 body.about-bg {
-background: url("Salts.jpg");
+background: url("salt2.jpg");
 background-size: cover;
 background-position: center;
 background-attachment: fixed;
 line-height: 1.5;
 color: white;
-background-size: 100% 100%;
+background-size: no-repeat 50% 50%;
+
 }
 
+
+//Menu Buttons
 .calc-buttons {
   opacity: 0.8;
   position: relative;
