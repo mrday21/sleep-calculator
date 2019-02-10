@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html>
-<title>Temperature Converter</title>
-
-<body>
-  <div class="container">
-<h2>Temperature Converter</h2>
-<p>Enter today's temperature:</p>
-
-<p>
-  <label>Fahrenheit</label>
-  <input id="inputFahrenheit" type="number" placeholder="Today's Temperature" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
-</p>
-  <p>Kelvin: <span id="outputKelvin"></span></p>
-  <p>Celsius: <span id="outputCelsius"></span></p>
-  <p>Newton: <span id="outputNewton"></span></p>
-</div>
-<script>
-function temperatureConverter(valNum) {
-  valNum = parseFloat(valNum);
-  document.getElementById("outputKelvin").innerHTML=(valNum-32)/1.8 + 273.15;
-  document.getElementById("outputCelsius").innerHTML=(valNum-32)/1.8;
-  document.getElementById("outputNewton").innerHTML=(valNum-32)/1.8 * (33 / 100);
-}
-</script>
-
-</body>
+  <title>Temperature Converter</title>
+  <body class="temp">
+    <div class="col-md-6">
+      <div class="form-group">
+        <h2 class="glow">Temperature Converter</h2>
+          <p>Enter today's temperature:</p>
+            <p>
+              <label>Fahrenheit</label>
+              <input id="inputFahrenheit" type="number" placeholder="Today's Temperature" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+            </p>
+              <p>Kelvin: <span id="outputKelvin"></span></p>
+              <p>Celsius: <span id="outputCelsius"></span></p>
+              <p>Newton: <span id="outputNewton"></span></p>
+            </div>
+        </div>
+    <script>
+        function temperatureConverter(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("outputKelvin").innerHTML=(valNum-32)/1.8 + 273.15;
+        document.getElementById("outputCelsius").innerHTML=(valNum-32)/1.8;
+        document.getElementById("outputNewton").innerHTML=(valNum-32)/1.8 * (33 / 100);
+      }
+    </script>
+  </body>
 </html>
